@@ -1,3 +1,4 @@
+import { signIn } from "next-auth/react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,16 @@ import styles from '../styles/Form.module.css';
 
 export default function Login() {
   const [show, setShow] = useState(false)
+
+  // Google Sign in handler
+  async function handleGoogleSignIn(){
+    signIn('google', {callbackUrl:'http://localhost:3000/'})
+  }
+
+  // Github Sign in handler
+  async function handleGithubSignIn(){
+    signIn('github', {callbackUrl:'http://localhost:3000/'})
+  }
   return (
     <Layout>
       <Head>
@@ -43,12 +54,12 @@ export default function Login() {
             </button>            
           </div>
           <div className="input-button">
-          <button type="button" className={styles.button_custom}>
+          <button onClick={handleGoogleSignIn} type="button" className={styles.button_custom}>
                 Sign in with Google <Image src={'/assets/google.svg'} width={20} height={25} alt=''></Image>
             </button>        
           </div>
           <div className="input-button">
-            <button type="button" className={styles.button_custom}>
+            <button onClick={handleGithubSignIn} type="button" className={styles.button_custom}>
                 Sign in with Github <Image src={'/assets/github.svg'} width={20} height={25} alt=''></Image>
             </button>          
           </div>
