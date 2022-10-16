@@ -12,12 +12,12 @@ export default function Login() {
 
   // Google Sign in handler
   async function handleGoogleSignIn(){
-    signIn('google', {callbackUrl:'http://localhost:3000/'})
+    signIn('google', {callbackUrl:'https://next-auth-app-ns.vercel.app/'})
   }
 
   // Github Sign in handler
   async function handleGithubSignIn(){
-    signIn('github', {callbackUrl:'http://localhost:3000/'})
+    signIn('github', {callbackUrl:'https://next-auth-app-ns.vercel.app/'})
   }
   return (
     <Layout>
