@@ -8,7 +8,7 @@ export default function Layout({children}){
                     <div className={styles.attar_one}></div>
                     <div className={styles.attar_two}></div>
                 </div>
-                <div className="right flex flex-col justify-evenly">
+                <div className="right flex flex-col justify-evenly bg-slate-50">
                     <div className="text-center py-10">{children}</div>
                 </div>
             </div>

@@ -27,7 +27,7 @@
   background-size: contain;
   z-index: 2;
   transform: translateX(390%);
-  animation: attar_one 25.5s ease-in 5.9s infinite;
+  /* animation: attar_one 25.5s ease-in 5.9s infinite; */
 }
 
 .attar_two {
@@ -40,7 +40,7 @@
   background-size: contain;
   z-index: 3;
   transform: translateX(290%);
-  animation: attar_two 18.5s ease-in 0.9s infinite;
+  /* animation: attar_two 18.5s ease-in 0.9s infinite; */
 }
 
 /* css keyframe */
