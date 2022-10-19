@@ -46,5 +46,5 @@ export default NextAuth({
       },
     }),
   ],
-  secret:procces.env.NEXT_SECRET
+  secret:"d635a8369c6ed61e96571f83ceca6e96e9c607e65bfefa8db21651d24967b9f924ce05418fea56588491e1ffb8e9a19cfa87fb4c46967314eb38e16b7af4b451"
 });

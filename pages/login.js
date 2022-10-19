@@ -36,12 +36,12 @@ export default function Login() {
 
   // Google Sign in handler
   async function handleGoogleSignIn() {
-    signIn("google", { callbackUrl: "http://localhost:3000/" });
+    signIn("google", { callbackUrl: "http://localhost:3000" });
   }
 
   // Github Sign in handler
   async function handleGithubSignIn() {
-    signIn("github", { callbackUrl: "http://localhost:3000/" });
+    signIn("github", { callbackUrl: "http://localhost:3000" });
   }
   return (
     <Layout>
